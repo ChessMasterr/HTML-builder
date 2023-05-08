@@ -11,7 +11,7 @@ fs.readdir(path.join(__dirname, 'styles'), {withFileTypes: true}, (err, files) =
   files.forEach((file) => { // проходимся циклом по массиву
     // console.log(file)
 
-    const filePath = path.join(__dirname, 'styles', file.name.toString()) // важно: путь к КАЖДОМУ файлу
+   // const filePath = path.join(__dirname, 'styles', file.name.toString())  важно: путь к КАЖДОМУ файлу
       if(file.isFile()){ // проверка на файл
         const typeFile = file.name.toString().split('.')[1]  // обрезаем имя файла для дальнейшего сравнения
         // console.log(typeFile)
